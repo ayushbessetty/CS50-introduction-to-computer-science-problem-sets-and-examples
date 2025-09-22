@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/book">
+        <input autocomplete="off" autofocus name="book" placeholder="query" type="search">
+        <button type="submit">search</button>
+    </form>
+    <ul></ul>
+
+    <script>
+        let input = document.querySelector('input');
+        input.addEventListener('input', async function() {
+            let response = await fetch('/search?q=' + input.value);
+            let books = await response.json();
+            let html='';
+            for (let book of books) {
+                html += '<li>' + book.title + '</li>';
+            }
+
+            document.querySelector('ul').innerHTML = html;
+        });
+    </script>
+{% endblock %}
+

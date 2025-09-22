@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Type</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transacted</th>
+            </tr>
+        </thead>
+       <tbody>
+            {% for stock in stocks %}
+                {% if stock["type"] == "SELL" %}
+                    <tr>
+                        <td style="color:red" class ="text-start">{{stock.symbol}}</td>
+                        <td style="color:red" class ="text-start">{{stock.type}}</td>
+                        <td style="color:red" class ="text-end">-{{stock.shares}}</td>
+                        <td style="color:red" class ="text-end">{{stock.price}}</td>
+                        <td style="color:red" class ="text-end">{{stock.transcated}}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td style="color:Green" class ="text-start">{{stock.symbol}}</td>
+                        <td style="color:Green" class ="text-start">{{stock.type}}</td>
+                        <td style="color:Green" class ="text-end">{{stock.shares}}</td>
+                        <td style="color:Green" class ="text-end">{{stock.price}}</td>
+                        <td style="color:Green" class ="text-end">{{stock.transcated}}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

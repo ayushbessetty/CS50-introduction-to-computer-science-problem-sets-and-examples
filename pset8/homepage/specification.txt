@@ -1,0 +1,22 @@
+list of 10 HTML tags:
+    1. <div>
+    2. <header>
+    3. <footer>
+    4. <button>
+    5. <img>
+    6. <link>
+    7. <a>
+    8. <p>
+    9. <strong>
+    10. <h2>
+
+list of 5 css properties:
+    1. margin
+    2. text-align
+    3. padding
+    4. background
+    5. color
+    6. font-size
+
+i have used javascript and bootstrap for making the button responsive for the correct answers and wrong answers.
+

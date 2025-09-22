@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+
+            let correct = document.querySelector('.C');
+
+            correct.addEventListener('click', function(){
+            correct.style.backgroundColor = 'Green';
+            document.querySelector('#p').innerHTML = "Correct!";
+            });
+
+            let incorrect =  document.querySelectorAll('.I');
+
+                for(let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click', function(){
+                    incorrect[i].style.backgroundColor = 'Red';
+                    document.querySelector('#p').innerHTML = "Incorrect";
+                    });
+                }
+
+
+            document.querySelector('#confirm').addEventListener('click', function(){
+                let name = document.querySelector('input');
+                if (name.value == "barcelona")
+                {
+                    name.style.backgroundColor = 'Green';
+                    document.querySelector('#p2').innerHTML = "Correct!";
+                }
+                else
+                {
+                    name.style.backgroundColor = 'Red';
+                    document.querySelector('#p2').innerHTML = "Incorrect";
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which football club won the 2025 FIFA club world club?<h3>
+                <button class="C">Chelsea FC</button>
+                <button class="I">PSG</button>
+                <button class="I">Real Madrid FC</button>
+                <button class="I">Inter Milan</button>
+                <p id="p"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Which football club won la liga 2024-25 season?<h3>
+                <input autocomplete="off" autofocus name="team" id ="team" placeholder="team name" type="text">
+                <button id="confirm">Confirm</button>
+                <p id="p2"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+.main {
+    background-image: url(images/body1.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* footer */
+.ft {
+    background-color: hsla(270, 30%, 60%, 0.5);
+    color: white;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    padding: 2rem;
+}
+
+h1 {
+    background-color: hsla(180, 50%, 50%, 0.7);
+    color: white;
+    padding: 4rem;
+    margin-bottom: 2rem;
+    text-align:center;
+}
+
+/* all team names */
+.team {
+    color: white;
+    font-size: 54px;
+}
+
+/* barcelona and psg logo position */
+.fcb, .psg {
+    background-color: hsla(10, 30%, 60%, 0.5);
+    margin: 6rem;
+    padding:2rem;
+    text-align:left;
+}
+
+/* real madrid and inter milan logo position */
+.real, .inter{
+    background-color: hsla(180, 30%, 60%, 0.5);
+    margin: 6rem;
+    padding:2rem;
+    text-align:right;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    margin-top : 8rem;
+    padding: 4rem;
+}
+
+.creator {
+    font-size:48px;
+}
+
+/* all teams  names */
+.nfcb, .nfcr, .nfcp, .nfci {
+    font-size: 72px;
+    text-align: center;
+    padding: 4rem;
+    margin-botton: 2rem;
+    background-color: hsla(210, 50%, 50%, 0.7);
+}
+
+body {
+    margin: 2rem;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+.fcbm {
+    background-image: url(images/fcbs.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.fcrm {
+     background-image: url(images/madrid.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.fcpm {
+    background-image: url(images/psgg.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.fcim {
+    background-image: url(images/ig.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    margin-bottom: 2rem;
+}
