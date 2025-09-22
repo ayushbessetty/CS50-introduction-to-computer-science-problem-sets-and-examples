@@ -1,0 +1,17 @@
+sort1 uses: bubble sort
+
+How do you know?: reversed 10000 = 0.257s, sorted10000 = 0.071s
+                  reversed 50000 = 8.447s, sorted50000 = 4.667s
+                  as best case time is greater than worst case time
+
+sort2 uses: merge sort
+
+How do you know?: reversed 10000 = 0.045s, sorted10000 = 0.035s
+                  reversed 50000 = 4.176s, sorted50000 = 3.431s
+                  as times are least and best and worst case times are same
+
+sort3 uses: selection sort
+
+How do you know?: reversed 10000 = 0.119s, sorted10000 = 0.130s
+                  reversed 50000 = 5.367s, sorted50000 = 5.857s
+                  greatest time taken in all cases
